@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".feature.main.home.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/raspberry"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center_horizontal"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_cart" />
+
+                <SearchView
+                    android:id="@+id/sv_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:autofillHints="name"
+                    android:background="@drawable/background_et_search"
+                    android:drawableStart="@drawable/ic_search_big"
+                    android:drawableTint="@color/raspberry"
+                    android:gravity="center"
+                    android:hint="@string/search"
+                    android:paddingHorizontal="16dp"
+                    android:queryHint="@string/search"
+                    android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+                    android:textColorHint="@color/raspberry_secondary_tint_2" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/find_your_desired_items"
+                android:textAppearance="@style/TextAppearance.MyTheme.Headline3" />
+
+
+            <!-- best selling products -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/sort_best_selling"
+                    android:textAppearance="@style/TextAppearance.MyTheme.Headline5"
+                    android:textColor="@color/teal_other" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_view_all_best_selling_products"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/view_all"
+                    android:textAppearance="@style/TextAppearance.MyTheme.Headline5"
+                    android:textColor="@color/teal_other" />
+
+            </FrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_latest_products"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- popular products -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/sort_populars"
+                    android:textAppearance="@style/TextAppearance.MyTheme.Headline5"
+                    android:textColor="@color/teal_other" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_view_all_popular_products"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/view_all"
+                    android:textAppearance="@style/TextAppearance.MyTheme.Headline5"
+                    android:textColor="@color/teal_other" />
+
+            </FrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_popular_products"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- cheapest products -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/sort_price_low_to_high"
+                    android:textAppearance="@style/TextAppearance.MyTheme.Headline5"
+                    android:textColor="@color/teal_other" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_view_all_cheapest_products"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/view_all"
+                    android:textAppearance="@style/TextAppearance.MyTheme.Headline5"
+                    android:textColor="@color/teal_other" />
+
+            </FrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_cheapest_products"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- most expensive products -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/sort_price_high_to_low"
+                    android:textAppearance="@style/TextAppearance.MyTheme.Headline5"
+                    android:textColor="@color/teal_other" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_view_all_most_expensive_products"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/view_all"
+                    android:textAppearance="@style/TextAppearance.MyTheme.Headline5"
+                    android:textColor="@color/teal_other" />
+
+            </FrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_most_expensive_products"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

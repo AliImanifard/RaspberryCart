@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    tools:context=".feature.main.product_detail_screen.ProductDetailActivity">
+
+    <ali.imanifard.raspberrycart.feature.scroll.ObservableScrollView
+        android:id="@+id/observable_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/raspberry">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_product_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp" />
+
+            </FrameLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_product_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textAppearance="@style/TextAppearance.MyTheme.Headline6"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@id/tv_product_price_before_discount"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="نام محصول" />
+
+                <TextView
+                    android:id="@+id/tv_product_price_before_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:alpha=".6"
+                    android:textAppearance="@style/TextAppearance.MyTheme.BodySmall"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="125,000" />
+
+                <TextView
+                    android:id="@+id/tv_product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:textAppearance="@style/TextAppearance.MyTheme.BodyMedium"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_product_price_before_discount"
+                    tools:text="100,000" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_product_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:textAppearance="@style/TextAppearance.MyTheme.BodyMedium"
+                android:textColor="@color/black"
+                tools:text="مودم جدید اپراتور ایرانسل تا نسل 4.5 اینترنت را نیز پشتیبانی می کند. لازم به یادآوری است که برای استفاده از خدمات نسل 4.5 اینترنت همراه ، سخت ‌افزار هر مشترک باید حداقل از فناوری LTE CAT6 پشتیبانی کند و در حال حاضر تعداد کمی از گوشی های تلفن همراه موجود در بازار از این تکنولوژی پشتیبانی می‌ کنند .\r\n ایرانسل در جایگاه یک شرکت مخابراتی است.با این مودم تا 32 کاربر می‌توانند به صورت هم‌زمان به وای‌فای ایجادشده توسط مودم  وصل شوند؛ به این معنی که می‌توان برای مصارف اداری و تجاری در شرکت‌های کوچک تا متوسط هم استفاده کرد.\r\nمودم TFi60-G1 ایرانسل TDLTE مودمی رومیزی با پشتیبانی از سرعت اینترنت نسل 4 و 4.5 برای استفاده در شرکتها، ادارات و خانه با سرعت و قیمت بی نظیر و اقتصادی قابل استفاده است." />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp">
+
+                <TextView
+                    android:id="@+id/tv_comments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:text="@string/comments"
+                    android:textAppearance="@style/TextAppearance.MyTheme.Headline6"
+                    android:textColor="@color/raspberry" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_insert_comment"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:text="@string/insert_comment"
+                    android:textAppearance="@style/TextAppearance.MyTheme.Headline6"
+                    android:textColor="@color/raspberry" />
+
+            </FrameLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_last_three_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/background_comment"
+                android:clipToPadding="false" />
+
+            <!-- api never returns more than three comments, so this button material always remains VISIBILITY.GONE.!!!! -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_view_all_comments"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="32dp"
+                android:text="@string/view_all_comments"
+                android:textAppearance="@style/TextAppearance.MyTheme.Headline6"
+                android:textColor="@color/raspberry"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+
+    </ali.imanifard.raspberrycart.feature.scroll.ObservableScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:translationZ="5dp">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="16dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/back"
+            android:scaleX="-1"
+            android:src="@drawable/ic_share" />
+
+        <ImageButton
+            android:id="@+id/btn_add_to_favorite"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="16dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/content_description_added_to_favorites"
+            android:src="@drawable/ic_heart" />
+    </FrameLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:alpha="0"
+        android:background="@color/white"
+        android:elevation="4dp"
+        app:cardCornerRadius="0dp">
+
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="56dp"
+            android:textAppearance="@style/TextAppearance.MyTheme.Headline6"
+            tools:text="نام محصول" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_add_to_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="@string/add_to_cart"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/raspberry"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/ic_cart"
+        app:iconGravity="textEnd"
+        app:rippleColor="@color/raspberry_secondary_tint_1"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

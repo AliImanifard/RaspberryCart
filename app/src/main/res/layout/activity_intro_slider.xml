@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feature.introSlider.IntroSliderActivity"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/asset_intro_slider"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:importantForAccessibility="no" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp2_intro_slider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/layoutDots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dotsColor="@color/raspberry_secondary_tint_1"
+        app:dotsCornerRadius="3dp"
+        app:dotsSize="16dp"
+        app:dotsSpacing="4dp"
+        app:dotsWidthFactor="2.5"
+        app:selectedDotColor="@color/raspberry"
+        app:progressMode="true"
+        app:dotsClickable="false"
+        android:layout_above="@id/btn_next"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha=".5"
+        android:layout_above="@id/layoutDots"
+        android:background="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:text="@string/next"
+        style="@style/full_width_primary_button"
+        />
+
+    <TextView
+        android:id="@+id/btn_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skip"
+        style="@style/TextAppearance.MyTheme.BodyLarge"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/raspberry"
+        tools:ignore="RelativeOverlap" />
+
+
+
+
+
+
+</RelativeLayout>

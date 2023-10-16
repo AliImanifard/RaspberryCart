@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".feature.main.auth.LogInFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/raspberry">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_cart"
+                app:tint="@color/white" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/sign_up"
+                    android:textAppearance="@style/TextAppearance.MyTheme.Headline4"
+                    android:textColor="@color/white" />
+
+                <ImageButton
+                    android:id="@+id/btn_close"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_margin="12dp"
+                    android:background="@null"
+                    android:contentDescription="@string/content_description_close"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_close"
+                    app:tint="@color/white" />
+
+            </FrameLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.MyTheme.Headline2"
+            android:textColor="@color/raspberry" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_email"
+            style="@style/my_text_input_layout_style"
+            android:layout_marginTop="8dp"
+            android:hint="@string/email">
+
+            <com.google.android.material.textfield.TextInputEditText style="@style/my_text_input_edit_text_style" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_user_id"
+            style="@style/my_text_input_layout_style"
+            android:hint="@string/user_id">
+
+            <com.google.android.material.textfield.TextInputEditText style="@style/my_text_input_edit_text_style" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_password"
+            style="@style/my_text_input_layout_style"
+            android:hint="@string/password"
+            app:endIconDrawable="@drawable/password_icon_toggle"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/my_text_input_edit_text_style"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_password_repeat"
+            style="@style/my_text_input_layout_style"
+            android:hint="@string/password_repeat"
+            app:endIconDrawable="@drawable/password_icon_toggle"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/my_text_input_edit_text_style"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_get_started"
+            style="@style/full_width_primary_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="@string/get_started"
+            android:textAppearance="@style/TextAppearance.MyTheme.Headline5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="5"
+                android:background="@color/gray" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/or"
+                android:textAppearance="@style/TextAppearance.MyTheme.BodySmall"
+                android:textColor="@color/gray" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="5"
+                android:background="@color/gray" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_continue_with_google"
+            style="@style/full_width_primary_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:drawableEnd="@drawable/ic_cib_google"
+            android:drawableTint="@color/white"
+            android:text="@string/continue_with_google"
+            android:textAppearance="@style/TextAppearance.MyTheme.Headline5" />
+
+        <Button
+            android:id="@+id/btn_continue_with_facebook"
+            style="@style/full_width_primary_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@drawable/ic_cib_facebook"
+            android:drawableTint="@color/white"
+            android:text="@string/continue_with_facebook"
+            android:textAppearance="@style/TextAppearance.MyTheme.Headline5" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="16dp"
+                android:text="@string/already_using_raspberry_cart"
+                android:textAppearance="@style/TextAppearance.MyTheme.BodySmall"
+                android:textColor="@color/black"
+
+                />
+
+            <TextView
+                android:id="@+id/btn_log_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="16dp"
+                android:text="@string/log_in_underlined"
+                android:textAppearance="@style/TextAppearance.MyTheme.BodyLarge"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

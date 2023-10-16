@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feature.checkout.CheckoutActivity"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    >
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/raspberry">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkout_action_bar_title"
+                android:textAppearance="@style/TextAppearance.MyTheme.Headline4"
+                android:layout_gravity="center"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_share"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:scaleX="-1"
+                android:layout_gravity="center_vertical|start"
+                android:layout_margin="12dp"
+                app:tint="@color/black"
+                android:contentDescription="@string/back" />
+
+        </FrameLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="32dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_comment"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:paddingBottom="16dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_purchase_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/successful_purchase"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.MyTheme.Headline5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="24dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_purchase_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/purchase_status"
+                android:textColor="@color/gray"
+                android:textAppearance="@style/TextAppearance.MyTheme.BodySmall"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_purchase_state"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="16dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_order_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="textview"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.MyTheme.BodySmall"
+                app:layout_constraintTop_toTopOf="@id/tv_purchase_status"
+                app:layout_constraintBottom_toBottomOf="@id/tv_purchase_status"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="16dp"
+                />
+
+            <View
+                android:id="@+id/divider_activity_checkout"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_purchase_status"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@color/gray"
+                android:layout_marginTop="12dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_purchase_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price"
+                android:textColor="@color/gray"
+                android:textAppearance="@style/TextAppearance.MyTheme.BodySmall"
+                app:layout_constraintStart_toStartOf="@id/tv_purchase_status"
+                app:layout_constraintTop_toBottomOf="@id/divider_activity_checkout"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_order_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="16000"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.MyTheme.BodySmall"
+                app:layout_constraintEnd_toEndOf="@id/tv_order_status"
+                app:layout_constraintTop_toTopOf="@id/tv_purchase_price"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_order_history"
+                style="@style/secondary_button"
+                android:text="@string/order_history"
+                android:layout_marginEnd="8dp"
+
+                />
+
+            <Button
+                android:id="@+id/btn_return_to_home"
+                style="@style/primary_button"
+                android:text="@string/return_to_home"
+                android:layout_marginStart="8dp"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

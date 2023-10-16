@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    tools:context=".feature.shipping.ShippingActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/raspberry">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/shipping_action_bar_title"
+                android:textAppearance="@style/TextAppearance.MyTheme.Headline4" />
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical|start"
+                android:layout_margin="12dp"
+                android:background="@null"
+                android:contentDescription="@string/back"
+                android:scaleType="fitXY"
+                android:scaleX="-1"
+                android:src="@drawable/ic_share"
+                app:tint="@color/black" />
+
+        </FrameLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="32dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_first_name"
+                style="@style/my_text_input_layout_style"
+                android:hint="@string/first_name">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/my_text_input_edit_text_style" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_last_name"
+                style="@style/my_text_input_layout_style"
+                android:hint="@string/last_name">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/my_text_input_edit_text_style" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_postal_code"
+                style="@style/my_text_input_layout_style"
+                android:hint="@string/postal_code">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/my_text_input_edit_text_style" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_phone_number"
+                style="@style/my_text_input_layout_style"
+                android:hint="@string/phone_number">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/my_text_input_edit_text_style" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_address"
+                style="@style/my_text_input_layout_style"
+                android:hint="@string/address">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/my_text_input_edit_text_style" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <include
+                android:id="@+id/purchase_detail_view"
+                layout="@layout/item_purchase_details" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_cash_on_delivery"
+                    style="@style/secondary_button"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/cash_on_delivery" />
+
+                <Button
+                    android:id="@+id/btn_online_payment"
+                    style="@style/primary_button"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/online_payment" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

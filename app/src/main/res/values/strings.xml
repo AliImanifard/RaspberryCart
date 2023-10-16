@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">سبد خرید تمشکی</string>
+    <!-- Remove or change this placeholder text -->
+    <string name="about_app_name">درباره سبد خرید تمشکی</string>
+    <string name="got_it">got it</string>
+    <string name="next">بعدی</string>
+    <string name="back">بازگشت</string>
+    <string name="skip"><u>رد کردن</u></string>
+    <string name="about_us">درباره ما</string>
+    <string name="tell_us">تماس با ما</string>
+    <string name="app_version">نسخه برنامه : </string>
+
+    <!-- Intro Slide 1 -->
+    <string name="intro_slide_1_title">خوش آمدید!</string>
+    <string name="intro_slide_1_description">سلام، از آشنایی با شما خوشحالم! ما از اینکه شما به ما ملحق می شوید بسیار هیجان زده ایم؛ پس بیایید شروع کنیم!</string>
+    <!-- Intro Slide 2 -->
+    <string name="intro_slide_2_title">پرداخت آسان</string>
+    <string name="intro_slide_2_description">خرید هرگز آسان تر نبوده است! با برنامه ما، می توانید به سرعت و ایمن فقط با چند کلیک، تسویه حساب کنید.</string>
+    <!-- Intro Slide 3 -->
+    <string name="intro_slide_3_title">آنچه را که به آن علاقه دارید، دریافت کنید.</string>
+    <string name="intro_slide_3_description">با سبد خرید تمشکی، ساعت ها در فروشگاه به آسانی جستجو کرده و محصول مورد نیاز خود را خرید کنید.</string>
+
+
+    <string name="search">جستجو</string>
+    <string name="find_your_desired_items">اقلام مورد نظر خود را بیابید.</string>
+    <string name="view_all"><u>مشاهده همه</u></string>
+    <string name="comments">نظرات کاربران</string>
+    <string name="insert_comment"><u>ثبت نظر</u></string>
+    <string name="view_all_comments">مشاهده همه نظرات</string>
+    <string name="sort">مرتب سازی</string>
+    <string name="sort_best_selling">پرفروش ترین ها</string>
+    <string name="sort_populars">محبوب ترین ها</string>
+    <string name="sort_price_high_to_low">گران ترین ها</string>
+    <string name="sort_price_low_to_high">ارزان ترین ها</string>
+    <string name="product_list">لیست محصولات</string>
+    <string name="add_to_cart">افزودن به سبد خرید</string>
+    <string name="added_to_cart">به سبد خرید اضافه شد.</string>
+    <string name="added_to_favorites">به علاقه مندی ها اضافه شد.</string>
+
+    <string-array name="sort">
+        <item>@string/sort_best_selling</item>
+        <item>@string/sort_populars</item>
+        <item>@string/sort_price_low_to_high</item>
+        <item>@string/sort_price_high_to_low</item>
+    </string-array>
+
+    <string name="unknown_error">خطای نامشخص</string>
+
+    <string name="shopping_was_never_this_easy">خرید هرگز به این آسانی نبود!</string>
+    <string name="sign_up">ثبت نام</string>
+    <string name="sign_up_underlined"><u>ثبت نام</u></string>
+    <string name="log_in">وارد شوید.</string>
+    <string name="log_in_underlined"><u>وارد شوید.</u></string>
+    <string name="already_have_an_account">از قبل حساب کاربری دارید؟</string>
+    <string name="user_id">نام کاربری</string>
+    <string name="password">رمز عبور</string>
+    <string name="forgot_password"><u>رمز عبور خود را فراموش کرده ام!</u></string>
+    <string name="or">یا</string>
+    <string name="haven_t_used_raspberry_cart_yet">هنوز از اپلیکیشن سبد خرید تمشکی استفاده نکرده اید؟</string>
+    <string name="continue_with_google">با حساب گوگل وارد شوید.</string>
+    <string name="continue_with_facebook">با حساب فیس بوک وارد شوید.</string>
+    <string name="get_started">شروع کنید.</string>
+    <string name="already_using_raspberry_cart">پیش از این در اپلیکیشن سبد خرید تمشکی ثبت نام کرده اید؟</string>
+    <string name="email">پست الکترونیکی (ایمیل)</string>
+    <string name="password_repeat">رمز عبور (تکرار)</string>
+    <string name="cart">سبد خرید</string>
+    <string name="pay">پرداخت</string>
+    <string name="count">تعداد</string>
+    <string name="remove_from_cart">حذف از سبد خرید</string>
+    <string name="purchase_detail">جزئیات خرید</string>
+    <string name="total_price">مبلغ کل خرید</string>
+    <string name="shipping_price">مبلغ ارسال</string>
+    <string name="payable_price">مبلغ قابل پرداخت</string>
+
+    <string name="cart_empty_state_login_required">وارد حساب کاربری خود شوید.</string>
+    <string name="cart_empty_state_call_to_action">ورود به حساب کاربری</string>
+    <string name="cart_empty_state">هیچ خبری اینجا نیست!</string>
+    
+    <string name="shipping_action_bar_title">انتخاب گیرنده و شیوه پرداخت</string>
+    <string name="online_payment">پرداخت اینترنتی</string>
+    <string name="cash_on_delivery">پرداخت در محل</string>
+
+    <string name="first_name">نام</string>
+    <string name="last_name">نام خانوادگی</string>
+    <string name="postal_code">کد پستی</string>
+    <string name="phone_number">شماره تلفن همراه</string>
+    <string name="address">آدرس</string>
+    <string name="checkout_action_bar_title">رسید پرداخت</string>
+    <string name="return_to_home">بازگشت به صفحه اصلی</string>
+    <string name="order_history">سوابق سفارش</string>
+
+    <string name="purchase_status">وضعیت سفارش</string>
+    <string name="price">مبلغ</string>
+    <string name="profile">حساب کاربری</string>
+    <string name="edit_profile">ویرایش حساب کاربری</string>
+    <string name="my_interests">علاقه مندی های من</string>
+    <string name="my_account">حساب من</string>
+    <string name="my_favorites">علاقه مندی ها</string>
+    <string name="orders">سفارشات</string>
+    <string name="sign_out">خروج از حساب کاربری</string>
+    <string name="guest_user">کاربر مهمان</string>
+    <string name="wishlist">فهرست علاقه مندی ها</string>
+    <string name="no_products_have_been_added_to_the_wishlist_yet">هنوز محصولی به لیست علاقه مندی ها اضافه نشده است.</string>
+    <string name="email_is_not_valid">آدرس ایمیل معتبر نمی باشد.</string>
+    <string name="user_id_is_not_valid">نام کاربری معتبر نمی باشد.</string>
+    <string name="password_mismatch_and_repetition">عدم اعتبار یا تطابق رمز عبور و تکرار رمز عبور</string>
+    <string name="please_fill_in_all_required_information_correctly">لطفا تمام اطلاعات مورد نیاز را به درستی پر کنید.</string>
+
+    <string name="successful_purchase">خرید با موفقیت انجام شد.</string>
+    <string name="unsuccessful_purchase">خرید ناموفق!</string>
+    <string name="preparing">در حال آماده سازی</string>
+    <string name="edit_profile_picture">ویرایش تصویر کاربری</string>
+
+
+    <!-- comments by default -->
+    <string name="comment_title_1">خیلی باحال و شیکه!</string>
+    <string name="comment_title_2">بسیار کارآمد و مفید</string>
+    <string name="comment_title_3">ارزش خرید بالایی داره.</string>
+    <string name="comment_date_1">1402/07/20</string>
+    <string name="comment_date_2">1402/07/21</string>
+    <string name="comment_date_3">1402/07/22</string>
+    <string name="comment_author_1">کاربر سبد خرید تمشکی 123</string>
+    <string name="comment_author_2">کاربر سبد خرید تمشکی 256</string>
+    <string name="comment_author_3">کاربر سبد خرید تمشکی 789</string>
+    <string name="comment_content_1">جنس و کیفیت و بسته بندی درجه یک هست. اینجوری بگم که تا حالا همچین چیزی ندیده بودم!! ممنون از سبد خرید تمشکی و تولید کننده و فروشنده</string>
+    <string name="comment_content_2">خیلی وقت بود منتظرش بودم، نسبت به قیمت عالی</string>
+    <string name="comment_content_3">تو تخفیف خیلی می ارزه جنسش خوبه خدا کنه در گذر زمان هم خوب باشه. با تشکر</string>
+    <string name="swipe_to_remove_the_item_from_favorites">برای حذف کالا از علاقه مندی ها، به بیرون، هلش بده.</string>
+    <string name="removed_to_favorites">از علاقه مندی ها حذف شد.</string>
+
+
+
+    <!-- content descriptions -->
+    <string name="content_description_view_type_changer">نوع نمایش پوسته را تغییر می دهد.</string>
+    <string name="content_description_image_view_sort">نوع مرتب سازی را تعیین کنید.</string>
+    <string name="content_description_added_to_favorites">افزودن به علاقه مندی ها</string>
+    <string name="content_description_info_in_heart_fragment">طریقه حذف کالا از علاقه مندی ها را مشاهده کنید.</string>
+    <string name="content_description_close">بستن</string>
+    <string name="content_description_increase">تعداد کالا را افزایش می دهد.</string>
+    <string name="content_description_decrease">تعداد کالا را کاهش می دهد.</string>
+
+    <string name="image_unknown">تصویر کاربر در سرور ثبت نشد.</string>
+
+
+
+</resources>

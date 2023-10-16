@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RaspberryCart" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+
+        <item name="colorPrimary">@color/raspberry</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/raspberry_secondary_tint_1</item>
+        <item name="colorSecondaryVariant">@color/raspberry_secondary_tint_2</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="backgroundColor">@color/white</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/raspberry_secondary_tint_3</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- font for all places -->
+        <item name="fontFamily">@font/mikhak_medium</item>
+
+        <!-- Material3 -->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.MyTheme.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.MyTheme.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.MyTheme.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.MyTheme.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.MyTheme.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.MyTheme.Headline6</item>
+
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.MyTheme.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.MyTheme.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.MyTheme.BodySmall</item>
+
+
+
+
+    </style>
+
+    <style name="Theme.RaspberryCart" parent="Base.Theme.RaspberryCart" />
+</resources>
